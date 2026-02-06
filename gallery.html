@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Galeri foto pendakian gunung Jawa Timur - Semeru, Bromo, Ijen, Raung, dan lainnya.">
+    <title>Gallery - Guide Mountain</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/pages.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <a href="index.html" class="logo">
+                <img src="assets/images/logo.png" alt="Guide Mountain Logo">
+                <span class="logo-text">Guide Mountain</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="mountains.html" class="nav-link">Mountains</a></li>
+                <li><a href="gallery.html" class="nav-link active">Gallery</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="https://wa.me/6285546528201" class="nav-icon" target="_blank" title="WhatsApp">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                    </svg>
+                </a>
+                <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1 class="page-hero-title">Photo <span>Gallery</span></h1>
+            <p class="page-hero-description">Jelajahi keindahan gunung-gunung Jawa Timur melalui koleksi foto perjalanan
+                kami.</p>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="section">
+        <div class="container">
+            <!-- Filters -->
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="semeru">Semeru</button>
+                <button class="filter-btn" data-filter="bromo">Bromo</button>
+                <button class="filter-btn" data-filter="ijen">Ijen</button>
+                <button class="filter-btn" data-filter="raung">Raung</button>
+                <button class="filter-btn" data-filter="arjuno">Arjuno</button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="gallery-grid">
+                <div class="gallery-item" data-category="semeru">
+                    <img src="https://images.unsplash.com/photo-1588668214407-6ea9a6d8c272?w=600&h=400&fit=crop"
+                        alt="Mount Semeru Summit">
+                    <div class="gallery-overlay">
+                        <h4 class="gallery-title">Mahameru Peak</h4>
+                        <span class="gallery-category">Mount Semeru</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="bromo">
+                    <img src="https://images.unsplash.com/photo-1609137144813-7d9921338f24?w=600&h=400&fit=crop"
+                        alt="Bromo Sunrise">
+                    <div class="gallery-overlay">
+                        <h4 class="gallery-title">Golden Sunrise</h4>
+                        <span class="gallery-category">Mount Bromo</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="ijen">
+                    <img src="https://images.unsplash.com/photo-1589308078059-be1415eab4c3?w=600&h=400&fit=crop"
+                        alt="Kawah Ijen Blue Fire">
+                    <div class="gallery-overlay">
+                        <h4 class="gallery-title">Blue Fire</h4>
+                        <span class="gallery-category">Kawah Ijen</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="raung">
+                    <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=600&h=400&fit=crop"
+                        alt="Mount Raung Crater">
+                    <div class="gallery-overlay">
+                        <h4 class="gallery-title">Volcanic Crater</h4>
+                        <span class="gallery-category">Mount Raung</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="semeru">
+                    <img src="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?w=600&h=400&fit=crop"
+                        alt="Semeru Trail">
+                    <div class="gallery-overlay">
+                        <h4 class="gallery-title">The Great Mountain Trail</h4>
+                        <span class="gallery-category">Mount Semeru</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="bromo">
+                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=400&fit=crop"
+                        alt="Bromo Sea of Sand">
+                    <div class="gallery-overlay">
+                        <h4 class="gallery-title">Sea of Sand</h4>
+                        <span class="gallery-category">Mount Bromo</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="ijen">
+                    <img src="https://images.unsplash.com/photo-1518623001395-125242310d0c?w=600&h=400&fit=crop"
+                        alt="Ijen Crater Lake">
+                    <div class="gallery-overlay">
+                        <h4 class="gallery-title">Turquoise Lake</h4>
+                        <span class="gallery-category">Kawah Ijen</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="arjuno">
+                    <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?w=600&h=400&fit=crop"
+                        alt="Mount Arjuno">
+                    <div class="gallery-overlay">
+                        <h4 class="gallery-title">Starry Night</h4>
+                        <span class="gallery-category">Mount Arjuno</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="semeru">
+                    <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?w=600&h=400&fit=crop"
+                        alt="Camping at Semeru">
+                    <div class="gallery-overlay">
+                        <h4 class="gallery-title">Basecamp Ranu Kumbolo</h4>
+                        <span class="gallery-category">Mount Semeru</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="bromo">
+                    <img src="https://images.unsplash.com/photo-1533240332313-0db49b459ad6?w=600&h=400&fit=crop"
+                        alt="Bromo Viewpoint">
+                    <div class="gallery-overlay">
+                        <h4 class="gallery-title">Penanjakan Viewpoint</h4>
+                        <span class="gallery-category">Mount Bromo</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="raung">
+                    <img src="https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?w=600&h=400&fit=crop"
+                        alt="Raung Summit">
+                    <div class="gallery-overlay">
+                        <h4 class="gallery-title">Summit Victory</h4>
+                        <span class="gallery-category">Mount Raung</span>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="arjuno">
+                    <img src="https://images.unsplash.com/photo-1486870591958-9b9d0d1dda99?w=600&h=400&fit=crop"
+                        alt="Arjuno Sunrise">
+                    <div class="gallery-overlay">
+                        <h4 class="gallery-title">Morning Glory</h4>
+                        <span class="gallery-category">Mount Arjuno</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section" style="background: var(--bg-card);">
+        <div class="container" style="text-align: center;">
+            <h2 style="font-size: 2rem; margin-bottom: 15px;">Want to Capture These <span
+                    style="color: var(--primary-green);">Moments?</span></h2>
+            <p style="color: var(--text-secondary); max-width: 500px; margin: 0 auto 30px;">Bergabunglah dengan trip
+                kami dan abadikan momen tak terlupakan di puncak gunung.</p>
+            <a href="services.html" class="btn btn-primary">Lihat Paket Trip</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo"><img src="assets/images/logo.png" alt="Guide Mountain"><span
+                            class="logo-text">Guide Mountain</span></a>
+                    <p>Panduan terpercaya untuk petualangan mendaki gunung di Jawa Timur.</p>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <div class="footer-links">
+                        <a href="index.html">Home</a><a href="about.html">About Us</a><a
+                            href="services.html">Services</a><a href="mountains.html">Mountains</a><a
+                            href="gallery.html">Gallery</a><a href="blog.html">Blog</a><a
+                            href="contact.html">Contact</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-title">Popular Peaks</h4>
+                    <div class="footer-links">
+                        <a href="mountains.html">Mount Semeru</a><a href="mountains.html">Kawah Ijen</a><a
+                            href="mountains.html">Mount Bromo</a><a href="mountains.html">Mount Raung</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-title">Contact Us</h4>
+                    <div class="footer-links">
+                        <a href="https://wa.me/6285546528201">+62 855-4652-8201</a><a
+                            href="mailto:info@guidemountain.com">info@guidemountain.com</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Guide Mountain. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Buttons -->
+    <div class="floating-buttons">
+        <a href="#" class="floating-btn floating-top" title="Back to Top"><svg width="24" height="24"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 15l-6-6-6 6" />
+            </svg></a>
+        <a href="https://wa.me/6285546528201" class="floating-btn floating-wa" target="_blank"
+            title="Chat WhatsApp"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+            </svg></a>
+    </div>
+
+    <!-- Bottom Navigation -->
+    <nav class="bottom-nav">
+        <div class="bottom-nav-items">
+            <a href="index.html" class="bottom-nav-item"><svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
+                </svg><span>Home</span></a>
+            <a href="gallery.html" class="bottom-nav-item active"><svg viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                </svg><span>Saved</span></a>
+            <a href="services.html" class="bottom-nav-item"><svg viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                </svg><span>Guide</span></a>
+            <a href="contact.html" class="bottom-nav-item"><svg viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z" />
+                </svg><span>Profile</span></a>
+        </div>
+    </nav>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

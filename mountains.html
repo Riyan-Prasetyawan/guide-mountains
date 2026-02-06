@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Daftar lengkap gunung di Jawa Timur dengan informasi biaya dan fasilitas pendakian.">
+    <title>Daftar Gunung - Guide Mountain</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/pages.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="index.html" class="logo"><img src="assets/images/logo.png" alt="Guide Mountain"><span
+                    class="logo-text">Guide Mountain</span></a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="mountains.html" class="nav-link active">Mountains</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="https://wa.me/6285546528201" class="nav-icon" target="_blank"><svg width="20" height="20"
+                        viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+                    </svg></a>
+                <button class="hamburger"><span></span><span></span><span></span></button>
+            </div>
+        </nav>
+    </header>
+
+    <section class="page-hero">
+        <div class="container">
+            <h1 class="page-hero-title">Daftar <span>Gunung</span></h1>
+            <p class="page-hero-description">Pilih destinasi pendakian Anda. Lihat detail biaya dan fasilitas yang
+                tersedia.</p>
+        </div>
+    </section>
+
+    <!-- Search Section -->
+    <section class="search-section">
+        <div class="container">
+            <div class="search-bar">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8" />
+                    <path d="M21 21l-4.35-4.35" />
+                </svg>
+                <input type="text" id="mountainSearch" placeholder="Cari gunung..." onkeyup="searchMountains()">
+            </div>
+            <div class="gallery-filters" style="margin-top: 20px;">
+                <button class="filter-btn active" data-filter="all" onclick="filterMountains('all')">Semua</button>
+                <button class="filter-btn" data-filter="easy" onclick="filterMountains('easy')">Mudah</button>
+                <button class="filter-btn" data-filter="medium" onclick="filterMountains('medium')">Menengah</button>
+                <button class="filter-btn" data-filter="hard" onclick="filterMountains('hard')">Sulit</button>
+                <button class="filter-btn" data-filter="expert" onclick="filterMountains('expert')">Expert</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mountains List -->
+    <section class="section">
+        <div class="container">
+            <div class="mountains-grid" id="mountainsGrid">
+
+                <!-- Gunung Semeru -->
+                <div class="mountain-card" data-difficulty="hard" data-name="semeru mahameru">
+                    <div class="mountain-image">
+                        <img src="https://images.unsplash.com/photo-1588668214407-6ea9a6d8c272?w=600&h=400&fit=crop"
+                            alt="Gunung Semeru">
+                        <span class="mountain-badge badge-hard">Hard</span>
+                        <div class="mountain-status status-open"><span class="status-dot"></span>OPEN</div>
+                    </div>
+                    <div class="mountain-content">
+                        <h3 class="mountain-name">Gunung Semeru</h3>
+                        <p class="mountain-subtitle">Mahameru - Puncak Tertinggi Jawa</p>
+                        <div class="mountain-info">
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2L2 22h20L12 2z" />
+                                </svg> 3.676 mdpl</span>
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                    <circle cx="12" cy="12" r="10" />
+                                </svg> 3 Hari 2 Malam</span>
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" />
+                                </svg> Lumajang</span>
+                        </div>
+                        <div class="mountain-price">
+                            <span class="price-label">Mulai dari</span>
+                            <span class="price-value">Rp 850.000</span>
+                            <span class="price-per">/orang</span>
+                        </div>
+                        <div class="mountain-facilities">
+                            <span class="facility-tag">✓ Guide</span>
+                            <span class="facility-tag">✓ Tenda</span>
+                            <span class="facility-tag">✓ Sleeping Bag</span>
+                            <span class="facility-tag">✓ Makan 5x</span>
+                            <span class="facility-tag">✓ SIMAKSI</span>
+                            <span class="facility-tag">✓ P3K</span>
+                        </div>
+                        <a href="https://wa.me/6285546528201?text=Halo,%20saya%20tertarik%20dengan%20trip%20Gunung%20Semeru"
+                            class="btn btn-primary" target="_blank">Booking Sekarang</a>
+                    </div>
+                </div>
+
+                <!-- Kawah Ijen -->
+                <div class="mountain-card" data-difficulty="medium" data-name="kawah ijen blue fire banyuwangi">
+                    <div class="mountain-image">
+                        <img src="https://images.unsplash.com/photo-1589308078059-be1415eab4c3?w=600&h=400&fit=crop"
+                            alt="Kawah Ijen">
+                        <span class="mountain-badge badge-medium">Medium</span>
+                        <div class="mountain-status status-open"><span class="status-dot"></span>OPEN</div>
+                    </div>
+                    <div class="mountain-content">
+                        <h3 class="mountain-name">Kawah Ijen</h3>
+                        <p class="mountain-subtitle">Blue Fire & Danau Asam Terbesar</p>
+                        <div class="mountain-info">
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2L2 22h20L12 2z" />
+                                </svg> 2.799 mdpl</span>
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                    <circle cx="12" cy="12" r="10" />
+                                </svg> 1 Hari</span>
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" />
+                                </svg> Banyuwangi</span>
+                        </div>
+                        <div class="mountain-price">
+                            <span class="price-label">Mulai dari</span>
+                            <span class="price-value">Rp 350.000</span>
+                            <span class="price-per">/orang</span>
+                        </div>
+                        <div class="mountain-facilities">
+                            <span class="facility-tag">✓ Guide</span>
+                            <span class="facility-tag">✓ Masker Gas</span>
+                            <span class="facility-tag">✓ Tiket Masuk</span>
+                            <span class="facility-tag">✓ Transport</span>
+                            <span class="facility-tag">✓ Sarapan</span>
+                        </div>
+                        <a href="https://wa.me/6285546528201?text=Halo,%20saya%20tertarik%20dengan%20trip%20Kawah%20Ijen"
+                            class="btn btn-primary" target="_blank">Booking Sekarang</a>
+                    </div>
+                </div>
+
+                <!-- Gunung Bromo -->
+                <div class="mountain-card" data-difficulty="easy" data-name="bromo sunrise penanjakan tengger">
+                    <div class="mountain-image">
+                        <img src="https://images.unsplash.com/photo-1609137144813-7d9921338f24?w=600&h=400&fit=crop"
+                            alt="Gunung Bromo">
+                        <span class="mountain-badge badge-easy">Easy</span>
+                        <div class="mountain-status status-open"><span class="status-dot"></span>OPEN</div>
+                    </div>
+                    <div class="mountain-content">
+                        <h3 class="mountain-name">Gunung Bromo</h3>
+                        <p class="mountain-subtitle">Sunrise Spektakuler & Lautan Pasir</p>
+                        <div class="mountain-info">
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2L2 22h20L12 2z" />
+                                </svg> 2.329 mdpl</span>
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                    <circle cx="12" cy="12" r="10" />
+                                </svg> 1 Hari</span>
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" />
+                                </svg> Probolinggo</span>
+                        </div>
+                        <div class="mountain-price">
+                            <span class="price-label">Mulai dari</span>
+                            <span class="price-value">Rp 275.000</span>
+                            <span class="price-per">/orang</span>
+                        </div>
+                        <div class="mountain-facilities">
+                            <span class="facility-tag">✓ Transport Jeep</span>
+                            <span class="facility-tag">✓ Tiket Masuk</span>
+                            <span class="facility-tag">✓ Guide Lokal</span>
+                            <span class="facility-tag">✓ Snack</span>
+                            <span class="facility-tag">✓ Air Mineral</span>
+                        </div>
+                        <a href="https://wa.me/6285546528201?text=Halo,%20saya%20tertarik%20dengan%20trip%20Gunung%20Bromo"
+                            class="btn btn-primary" target="_blank">Booking Sekarang</a>
+                    </div>
+                </div>
+
+                <!-- Gunung Raung -->
+                <div class="mountain-card" data-difficulty="expert" data-name="raung kalibaru bondowoso">
+                    <div class="mountain-image">
+                        <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=600&h=400&fit=crop"
+                            alt="Gunung Raung">
+                        <span class="mountain-badge badge-expert">Expert</span>
+                        <div class="mountain-status status-closed"><span class="status-dot"></span>CLOSED</div>
+                    </div>
+                    <div class="mountain-content">
+                        <h3 class="mountain-name">Gunung Raung</h3>
+                        <p class="mountain-subtitle">Kaldera Terbesar di Jawa</p>
+                        <div class="mountain-info">
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2L2 22h20L12 2z" />
+                                </svg> 3.332 mdpl</span>
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                    <circle cx="12" cy="12" r="10" />
+                                </svg> 3 Hari 2 Malam</span>
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" />
+                                </svg> Bondowoso</span>
+                        </div>
+                        <div class="mountain-price">
+                            <span class="price-label">Mulai dari</span>
+                            <span class="price-value">Rp 950.000</span>
+                            <span class="price-per">/orang</span>
+                        </div>
+                        <div class="mountain-facilities">
+                            <span class="facility-tag">✓ Guide Pro</span>
+                            <span class="facility-tag">✓ Tenda</span>
+                            <span class="facility-tag">✓ Sleeping Bag</span>
+                            <span class="facility-tag">✓ Makan 6x</span>
+                            <span class="facility-tag">✓ Porter</span>
+                            <span class="facility-tag">✓ P3K</span>
+                        </div>
+                        <a href="https://wa.me/6285546528201?text=Halo,%20saya%20tertarik%20dengan%20trip%20Gunung%20Raung"
+                            class="btn btn-primary" target="_blank">Booking Sekarang</a>
+                    </div>
+                </div>
+
+                <!-- Gunung Arjuno-Welirang -->
+                <div class="mountain-card" data-difficulty="hard" data-name="arjuno welirang tretes malang">
+                    <div class="mountain-image">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=400&fit=crop"
+                            alt="Gunung Arjuno">
+                        <span class="mountain-badge badge-hard">Hard</span>
+                        <div class="mountain-status status-open"><span class="status-dot"></span>OPEN</div>
+                    </div>
+                    <div class="mountain-content">
+                        <h3 class="mountain-name">Gunung Arjuno-Welirang</h3>
+                        <p class="mountain-subtitle">Twin Peaks dengan Kawah Belerang</p>
+                        <div class="mountain-info">
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2L2 22h20L12 2z" />
+                                </svg> 3.339 mdpl</span>
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                    <circle cx="12" cy="12" r="10" />
+                                </svg> 2 Hari 1 Malam</span>
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" />
+                                </svg> Malang/Pasuruan</span>
+                        </div>
+                        <div class="mountain-price">
+                            <span class="price-label">Mulai dari</span>
+                            <span class="price-value">Rp 650.000</span>
+                            <span class="price-per">/orang</span>
+                        </div>
+                        <div class="mountain-facilities">
+                            <span class="facility-tag">✓ Guide</span>
+                            <span class="facility-tag">✓ Tenda</span>
+                            <span class="facility-tag">✓ Sleeping Bag</span>
+                            <span class="facility-tag">✓ Makan 4x</span>
+                            <span class="facility-tag">✓ P3K</span>
+                        </div>
+                        <a href="https://wa.me/6285546528201?text=Halo,%20saya%20tertarik%20dengan%20trip%20Gunung%20Arjuno-Welirang"
+                            class="btn btn-primary" target="_blank">Booking Sekarang</a>
+                    </div>
+                </div>
+
+                <!-- Gunung Penanggungan -->
+                <div class="mountain-card" data-difficulty="easy" data-name="penanggungan trawas mojokerto">
+                    <div class="mountain-image">
+                        <img src="https://images.unsplash.com/photo-1501554728187-ce583db33af7?w=600&h=400&fit=crop"
+                            alt="Gunung Penanggungan">
+                        <span class="mountain-badge badge-easy">Easy</span>
+                        <div class="mountain-status status-open"><span class="status-dot"></span>OPEN</div>
+                    </div>
+                    <div class="mountain-content">
+                        <h3 class="mountain-name">Gunung Penanggungan</h3>
+                        <p class="mountain-subtitle">Gunung Suci dengan Candi Kuno</p>
+                        <div class="mountain-info">
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2L2 22h20L12 2z" />
+                                </svg> 1.653 mdpl</span>
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                    <circle cx="12" cy="12" r="10" />
+                                </svg> 1 Hari</span>
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" />
+                                </svg> Mojokerto</span>
+                        </div>
+                        <div class="mountain-price">
+                            <span class="price-label">Mulai dari</span>
+                            <span class="price-value">Rp 175.000</span>
+                            <span class="price-per">/orang</span>
+                        </div>
+                        <div class="mountain-facilities">
+                            <span class="facility-tag">✓ Guide</span>
+                            <span class="facility-tag">✓ Tiket Masuk</span>
+                            <span class="facility-tag">✓ Snack</span>
+                            <span class="facility-tag">✓ Air Mineral</span>
+                        </div>
+                        <a href="https://wa.me/6285546528201?text=Halo,%20saya%20tertarik%20dengan%20trip%20Gunung%20Penanggungan"
+                            class="btn btn-primary" target="_blank">Booking Sekarang</a>
+                    </div>
+                </div>
+
+                <!-- Gunung Kelud -->
+                <div class="mountain-card" data-difficulty="medium" data-name="kelud kediri blitar">
+                    <div class="mountain-image">
+                        <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=600&h=400&fit=crop"
+                            alt="Gunung Kelud">
+                        <span class="mountain-badge badge-medium">Medium</span>
+                        <div class="mountain-status status-open"><span class="status-dot"></span>OPEN</div>
+                    </div>
+                    <div class="mountain-content">
+                        <h3 class="mountain-name">Gunung Kelud</h3>
+                        <p class="mountain-subtitle">Kawah Danau yang Menawan</p>
+                        <div class="mountain-info">
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2L2 22h20L12 2z" />
+                                </svg> 1.731 mdpl</span>
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                    <circle cx="12" cy="12" r="10" />
+                                </svg> 1 Hari</span>
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" />
+                                </svg> Kediri</span>
+                        </div>
+                        <div class="mountain-price">
+                            <span class="price-label">Mulai dari</span>
+                            <span class="price-value">Rp 225.000</span>
+                            <span class="price-per">/orang</span>
+                        </div>
+                        <div class="mountain-facilities">
+                            <span class="facility-tag">✓ Guide</span>
+                            <span class="facility-tag">✓ Tiket Masuk</span>
+                            <span class="facility-tag">✓ Transport Lokal</span>
+                            <span class="facility-tag">✓ Snack</span>
+                        </div>
+                        <a href="https://wa.me/6285546528201?text=Halo,%20saya%20tertarik%20dengan%20trip%20Gunung%20Kelud"
+                            class="btn btn-primary" target="_blank">Booking Sekarang</a>
+                    </div>
+                </div>
+
+                <!-- Gunung Argopuro -->
+                <div class="mountain-card" data-difficulty="expert" data-name="argopuro probolinggo situbondo">
+                    <div class="mountain-image">
+                        <img src="https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?w=600&h=400&fit=crop"
+                            alt="Gunung Argopuro">
+                        <span class="mountain-badge badge-expert">Expert</span>
+                        <div class="mountain-status status-open"><span class="status-dot"></span>OPEN</div>
+                    </div>
+                    <div class="mountain-content">
+                        <h3 class="mountain-name">Gunung Argopuro</h3>
+                        <p class="mountain-subtitle">Trek Terpanjang di Jawa</p>
+                        <div class="mountain-info">
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2L2 22h20L12 2z" />
+                                </svg> 3.088 mdpl</span>
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                    <circle cx="12" cy="12" r="10" />
+                                </svg> 4-5 Hari</span>
+                            <span><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" />
+                                </svg> Probolinggo</span>
+                        </div>
+                        <div class="mountain-price">
+                            <span class="price-label">Mulai dari</span>
+                            <span class="price-value">Rp 1.250.000</span>
+                            <span class="price-per">/orang</span>
+                        </div>
+                        <div class="mountain-facilities">
+                            <span class="facility-tag">✓ Guide Pro</span>
+                            <span class="facility-tag">✓ Tenda</span>
+                            <span class="facility-tag">✓ Sleeping Bag</span>
+                            <span class="facility-tag">✓ Makan 8x</span>
+                            <span class="facility-tag">✓ Porter</span>
+                            <span class="facility-tag">✓ P3K Lengkap</span>
+                        </div>
+                        <a href="https://wa.me/6285546528201?text=Halo,%20saya%20tertarik%20dengan%20trip%20Gunung%20Argopuro"
+                            class="btn btn-primary" target="_blank">Booking Sekarang</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo"><img src="assets/images/logo.png" alt="Guide Mountain"><span
+                            class="logo-text">Guide Mountain</span></a>
+                    <p>Panduan terpercaya untuk petualangan mendaki gunung di Jawa Timur.</p>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <div class="footer-links"><a href="index.html">Home</a><a href="about.html">About Us</a><a
+                            href="services.html">Services</a><a href="mountains.html">Mountains</a><a
+                            href="gallery.html">Gallery</a><a href="blog.html">Blog</a><a
+                            href="contact.html">Contact</a></div>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-title">Popular Peaks</h4>
+                    <div class="footer-links"><a href="mountains.html">Mount Semeru</a><a href="mountains.html">Kawah
+                            Ijen</a><a href="mountains.html">Mount Bromo</a><a href="mountains.html">Mount Raung</a><a
+                            href="mountains.html">Mount Arjuno</a></div>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-title">Contact Us</h4>
+                    <div class="footer-links"><a href="https://wa.me/6285546528201">+62 855-4652-8201</a><a
+                            href="mailto:info@guidemountain.com">info@guidemountain.com</a><a
+                            href="contact.html">Malang, East Java</a></div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Guide Mountain. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="floating-buttons">
+        <a href="#" class="floating-btn floating-top"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2">
+                <path d="M18 15l-6-6-6 6" />
+            </svg></a>
+        <a href="https://wa.me/6285546528201" class="floating-btn floating-wa" target="_blank"><svg width="24"
+                height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+            </svg></a>
+    </div>
+
+    <nav class="bottom-nav">
+        <div class="bottom-nav-items">
+            <a href="index.html" class="bottom-nav-item"><svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
+                </svg><span>Home</span></a>
+            <a href="mountains.html" class="bottom-nav-item active"><svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2L2 22h20L12 2z" />
+                </svg><span>Mountains</span></a>
+            <a href="services.html" class="bottom-nav-item"><svg viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                </svg><span>Guide</span></a>
+            <a href="contact.html" class="bottom-nav-item"><svg viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z" />
+                </svg><span>Profile</span></a>
+        </div>
+    </nav>
+
+    <script src="assets/js/main.js"></script>
+    <script>
+        function searchMountains() {
+            const input = document.getElementById('mountainSearch').value.toLowerCase();
+            const cards = document.querySelectorAll('.mountain-card');
+            cards.forEach(card => {
+                const name = card.dataset.name.toLowerCase();
+                card.style.display = name.includes(input) ? 'block' : 'none';
+            });
+        }
+
+        function filterMountains(difficulty) {
+            const cards = document.querySelectorAll('.mountain-card');
+            const btns = document.querySelectorAll('.filter-btn');
+            btns.forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+            cards.forEach(card => {
+                if (difficulty === 'all' || card.dataset.difficulty === difficulty) {
+                    card.style.display = 'block';
+                    card.style.animation = 'fadeIn 0.5s ease';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>
